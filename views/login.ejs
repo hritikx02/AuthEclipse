@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgba(11, 18, 39, 0.746), rgb(16, 27, 29), rgb(3, 33, 36));
+        }
+
+        .box {
+            background-image: linear-gradient(to right, rgba(2, 4, 11, 0.611), rgb(10, 17, 18), rgb(2, 18, 20));
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border-radius: 80px;
+            display: flex;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .box1 {
+            color: #eeebd9;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .box2 {
+            display: flex;
+            justify-self: center;
+            align-content: center;
+        }
+
+        .box3 {
+            margin: 22px;
+            border-radius: 63px;
+            background-image: linear-gradient(to right, rgba(207, 207, 172, 0.81), rgba(117, 117, 92, 0.923));
+            box-shadow: 0 0 15px 5px rgba(31, 35, 43, 0.543);
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-container {
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+
+        .form {
+            text-align: center;
+        }
+
+        .form h2 {
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 80px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box1">
+                <h2>Welcome to</h2>
+                <h1 style="color: rgb(10, 68, 89);">Gamers' Almanac</h1>
+                <p style="font-weight: 100;">Here, I've used Express to build a simple yet powerful web platform.
+                    Whether you're new to coding or a seasoned developer, I've designed this application to be
+                    user-friendly and easy to navigate.
+                    Join me as we explore the world of web development together!</p>
+            </div>
+            <div class="box2">
+                <div class="box3"
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <div class="login-container">
+                        <h2 style="font-weight: lighter;">Login</h2>
+                        <form action="/login" method="POST">
+                            
+                            <input type="email" name="email" id="form-ex3" class="input-field" placeholder="E-Mail">
+                            <input type="password" name="password" id="form-ex4" class="input-field"
+                                placeholder="Password">
+                            <input type="submit" class="btn" value="LOGIN">
+                            <div class="text-center">
+                                <p>Don't have an account yet? <a href="/register">Register</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
