@@ -1,0 +1,94 @@
+
+:root {
+    --background-gradient: linear-gradient(to right, rgba(11, 18, 39, 0.746), rgba(16, 27, 29, 0.915), rgb(3, 33, 36));
+    --box-gradient: linear-gradient(to right, rgba(2, 4, 11, 0.611), rgb(10, 17, 18), rgb(2, 18, 20));
+    --input-gradient: linear-gradient(to right, rgba(207, 207, 172, 0.81), rgba(117, 117, 92, 0.923));
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: var(--background-gradient);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.box {
+    background-image: var(--box-gradient);
+    width: 75vw;
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.5);
+    border-radius: 5rem;
+    display: flex;
+    margin: 1.25rem;
+}
+
+.box1, .box2 {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.box1 {
+    width: 60vw;
+    padding: 1.875rem;
+    color: #eeebd9;
+}
+
+.box2 {
+    width: 40vw;
+    justify-self: center;
+    align-content: center;
+}
+
+.box3 {
+    background-image: var(--input-gradient);
+    box-shadow: 0 0 0.9375rem 0.3125rem rgba(31, 35, 43, 0.543);
+    padding: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1.25rem;
+    border-radius: 3.9375rem;
+}
+
+.login-container {
+    padding: 1.25rem;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.625rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 0.9375rem;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* Makes everything slightly smaller */
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px; /* Further reduces sizes on small screens */
+    }
+}

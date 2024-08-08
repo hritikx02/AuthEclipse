@@ -10,9 +10,11 @@ const passport = require('passport')
 const flash = require('express-flash');
 const session = require('express-session');
 const methodOverride = require("method-override")
+const path = require('path')
 
 const connection = require("./database");
 
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Import initPassportLocal from passport-config
 const initPassportLocal = require('./passport-config');
